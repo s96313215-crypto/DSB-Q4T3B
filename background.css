@@ -1,0 +1,18 @@
+/* background.css */
+
+/* Apply a background to the whole page */
+body {
+    /* Background image (replace with your own image path) */
+    background-image: url('images/background.jpg'); 
+    background-size: cover;      /* Make it cover the entire screen */
+    background-repeat: no-repeat; /* Don’t repeat the image */
+    background-position: center; /* Center the image */
+    
+    /* Optional: a subtle overlay color */
+    background-color: rgba(0, 0, 0, 0.3); 
+    background-blend-mode: overlay;
+    
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Just for nice text */
+}

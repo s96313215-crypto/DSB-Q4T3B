@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="background.css">
+
+<title>Our Details - Cozy Café</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+    /* Body with coffee beans background */
+    body {
+        margin: 0;
+        font-family: Poppins, sans-serif;
+        background-image: url('https://images.unsplash.com/photo-1600628422003-1c52c7d5c9b5'); /* coffee beans image */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        color: #fff;
+    }
+
+    /* Optional overlay for readability */
+    body::before {
+        content: '';
+        position: fixed;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background-color: rgba(107, 61, 38, 0.6); /* semi-transparent brown overlay */
+        z-index: -1;
+    }
+
+    header, footer {
+        background-color: rgba(75, 46, 46, 0.9);
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .navbar {
+        background-color: rgba(111, 78, 55, 0.9);
+    }
+    .navbar a {
+        color: white !important;
+        margin-right: 15px;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .gallery img, table img {
+        width: 100%;
+        border-radius: 15px;
+        object-fit: cover;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    /* Hover effect for images */
+    .gallery img:hover, table img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    }
+
+    table {
+        background-color: rgba(255, 255, 255, 0.1);
+        border-collapse: collapse;
+        color: #fff;
+    }
+
+    table td, table th {
+        padding: 10px;
+        border: 1px solid rgba(255,255,255,0.3);
+    }
+
+    h1, h2, h3, p {
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+    }
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand text-white" href="index.html">Cozy Café</a>
+    <div>
+      <a href="index.html" class="nav-link d-inline">Home</a>
+      <a href="menu.html" class="nav-link d-inline">Menu</a>
+      <a href="about.html" class="nav-link d-inline">Our Details</a>
+      <a href="gallery.html" class="nav-link d-inline">Gallery</a>
+      <a href="contact.html" class="nav-link d-inline">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-5 text-center">
+    <h1>Our Café</h1>
+    <p><i>A place for comfort, conversation, and carefully crafted coffee</i></p>
+</div>
+
+<hr width="80%">
+
+<br>
+
+<table width="80%" align="center" cellpadding="15">
+    <tr>
+        <td width="35%" align="center">
+            <img 
+                src="https://images.unsplash.com/photo-1511920170033-f8396924c348"
+                width="250"
+                alt="Cafe Interior"
+            >
+        </td>
+        <td width="65%">
+            <p>
+                Our café is built on the simple idea of offering quality coffee in a calm
+                and welcoming environment. We focus on thoughtful preparation, friendly
+                service, and a space where guests can slow down and enjoy the moment.
+                Whether you are here for a quiet break or a meaningful conversation,
+                we strive to make every visit comfortable and memorable.
+            </p>
+        </td>
+    </tr>
+</table>
+
+<br><br>
+
+<center>
+    <h2>Our Details</h2>
+</center>
+
+<table width="60%" align="center" cellpadding="10">
+    <tr>
+        <td><b>Coffee</b></td>
+        <td>Freshly brewed, carefully selected beans</td>
+    </tr>
+    <tr>
+        <td><b>Atmosphere</b></td>
+        <td>Warm, quiet, and welcoming</td>
+    </tr>
+    <tr>
+        <td><b>Purpose</b></td>
+        <td>A place to relax, work, or connect</td>
+    </tr>
+</table>
+
+<br><br>
+
+<center>
+    <img 
+        src="https://images.unsplash.com/photo-1509042239860-f550ce710b93"
+        width="350"
+        alt="Coffee Cup"
+    >
+    <p>© 2026 Our Café</p>
+</center>
+
+</body>
+</html>
